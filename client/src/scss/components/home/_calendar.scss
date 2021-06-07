@@ -1,0 +1,39 @@
+.calendar {
+  text-align: center;
+  margin: 1rem;
+
+  &__content {
+    background: $whiteColor;
+    padding: 1rem;
+    border-radius: 12px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .anticon {
+        cursor: pointer;
+        font-size: 22px;
+        color: #42526E;
+      }
+    }
+
+    tbody > tr > td {
+      width: 200px;
+      height: 55px;
+      transition: 0.4s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        transition: 0.4s ease-in;
+        background: $blueColor;
+        color: $whiteColor !important;
+      }
+    }
+
+    .selected { background: $blueColor; color: $whiteColor !important }
+    .task-days { background: $greenColor; color: $whiteColor !important }
+    .invalid-days { background: $gray; pointer-events: none }
+  }
+}

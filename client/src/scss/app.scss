@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import './components/all';
+
+* {
+  margin: 0;
+  font-family: 'Heebo' !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  background: #F4F7FA !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  &-thumb {
+    border-radius: 6px;
+    background: $greenColor;
+    &:hover { background: $blueColor }
+  }
+}
+
+h1, h4, td, p, .ant-col { color: #42526E !important }
+.user-picture { width: 24px; height: 24px; border-radius: 50%; cursor: pointer }
+.red-btn { @include custom-btn(#fb743e, $blueColor) }
+.green-btn { @include custom-btn($greenColor, $redColor) }
+.blue-btn { @include custom-btn($blueColor, $darkBlueColor) }
+.pink-btn { @include custom-btn($pinkColor, $darkBlueColor) }

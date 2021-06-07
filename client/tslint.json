@@ -1,0 +1,30 @@
+{
+  "extends": [ "tslint-react", "tslint:latest" ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-var-keyword": true,
+    "no-unused-variable": true,
+    "no-duplicate-variable": true,
+    "no-duplicate-imports": true,
+    "no-require-imports": true,
+    "no-submodule-imports": false,
+    "no-default-export": false,
+    "no-implicit-dependencies": false,
+    "no-trailing-whitespace": true,
+    "whitespace": true,
+    "prefer-conditional-expression": false,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "only-arrow-functions": true,
+    "quotemark": false,
+    "semicolon": true,
+    "trailing-comma": [ true, { "multiline": "always" } ]
+  }
+}
